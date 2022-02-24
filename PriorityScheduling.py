@@ -26,20 +26,21 @@ def prioritySchedule():
     tasks = file()
     # start time
     started = 0
-    for task in tasks:
-        print(task)
-
-
-
-        # name = i[0]
-        # priority = i[1]
-        # burst = i[2]
-        # print(f"Started at: {started}")
-        # started = started + int(burst)
-        # print(f"Will run name: {name}")
-        # print(f"Priority: {priority}")
-        # print(f"Burst: {burst}")
-        # print(f"Ended at: {started}\n")
+    # sport by priority
+    # must change to int to ge able to properly sort from G -> L
+    tasks = sorted(tasks, key= lambda task:int(task[1]), reverse= True)
+    print(f"Sorted order: {tasks}\n")
+    for i in tasks:
+        print(i[0], end= " ")
+        name = i[0]
+        priority = i[1]
+        burst = i[2]
+        print(f"Started at: {started}")
+        started = started + int(burst)
+        print(f"Will run name: {name}")
+        print(f"Priority: {priority}")
+        print(f"Burst: {burst}")
+        print(f"Ended at: {started}\n")
 
 
 prioritySchedule()
