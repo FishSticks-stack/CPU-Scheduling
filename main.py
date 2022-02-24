@@ -15,5 +15,5 @@
 def fcfs():
     print("First Come First Serve Scheduling")
     # take file that holds tasks
-    f = open("")
+    f = open("schedule.txt")
 
