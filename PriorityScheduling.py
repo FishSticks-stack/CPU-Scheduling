@@ -1,6 +1,6 @@
 # TODO Priority scheduling
 # based on priority
-# TODO the setup
+
 
 # handling the schedule.txt
 def file():
