@@ -2,13 +2,12 @@
 # each task is run for a time quantum (quantum = 3 or for the remainder of its CPU burst)
 # time quantum = 10 milliseconds
 
-# handling the schedule.txt
-# for FCFS
-
 # list to hold tasks
 items = []
 name = []
 burst = []
+
+# handling the schedule.txt
 with open("schedule.txt", 'r') as FO:
     allLines = FO.readlines()
 # remove invisible extra characters and commas
